@@ -4,4 +4,11 @@
   
   /* FONT FAMILY */
   --font-main : 'Rubik';
+
+  /* COLOR SCHEME */
+  --dark : #0b0c10; 
+  --dark-secondary : #1f2833; 
+  --light : #c5c6c7; 
+  --glow : #66fcf1; 
+  --glow-dark : #45a29e; 
 }
