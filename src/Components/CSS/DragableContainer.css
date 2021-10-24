@@ -1,0 +1,24 @@
+.dragable-container{
+  width: 450px;
+  height:450px;
+
+  border: 1px dashed var(--glow-dark);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.browse-button{
+  padding: 12px;
+  margin-top: 1em;
+  color: var(--glow-dark);
+  
+  background: var(--dark);
+  border: 1px dashed var(--glow-dark);
+}
+.browse-button:hover{
+  border: 1px dashed var(--glow);
+  color: var(--glow);
+}
