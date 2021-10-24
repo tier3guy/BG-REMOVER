@@ -1,9 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
 
 :root{
   
   /* FONT FAMILY */
-  --font-main : 'Rubik';
+  --font-main : 'Roboto Condensed';
 
   /* COLOR SCHEME */
   --dark : #0b0c10; 
@@ -12,3 +12,25 @@
   --glow : #66fcf1; 
   --glow-dark : #45a29e; 
 }
+
+/* FONT COLOR CLASSES */
+.font-glow{
+  color: var(--glow);
+}
+.font-glow-dark{
+  color: var(--glow-dark);
+}
+.font-white{
+  color: var(--light);
+}
+/*--------------------*/
+
+
+/* BACKGROUND COLOR CLASSES */
+.bg-dark{
+  background: var(--dark);
+}
+.bg-dark-secondary{
+  background: var(--dark-secondary);
+}
+/*---------------------------*/

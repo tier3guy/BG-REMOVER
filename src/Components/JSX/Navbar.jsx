@@ -1,10 +1,12 @@
 import React from 'react';
 import '../CSS/Navbar.css';
+import { Logo } from './Logo';
 
 const Navbar = () => {
   return (
     <nav>
-      <h1>Remove BG</h1>
+      <Logo/>
+      <p className = "font-glow-dark">Made with ❤️ by Avinash</p>
     </nav>
   )
 }
