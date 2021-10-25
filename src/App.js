@@ -1,6 +1,7 @@
 import './App.css';
 import DragableContainer from './Components/JSX/DragableContainer';
 import Navbar from './Components/JSX/Navbar';
+import Output from './Components/JSX/Output';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Navbar/>
       <section className = "main-body">
         <DragableContainer/>
+        <Output/>
       </section>
     </div>
   );

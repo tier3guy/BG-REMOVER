@@ -2,7 +2,7 @@
   width: 450px;
   height:450px;
 
-  border: 1px dashed var(--glow-dark);
+  border: 1px dashed var(--glow);
 
   display: flex;
   flex-direction: column;
@@ -13,7 +13,7 @@
 .browse-button{
   padding: 12px;
   margin-top: 1em;
-  color: var(--glow-dark);
+  color: var(--light);
   
   background: var(--dark);
   border: 1px dashed var(--glow-dark);

@@ -1,4 +1,6 @@
 .main-body{
   display: flex;
   padding: 1em 2em;
+
+  justify-content: space-between;
 }
