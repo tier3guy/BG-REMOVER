@@ -2,7 +2,7 @@
   width: 450px;
   height:450px;
 
-  border: 1px dashed var(--glow);
+  border: 2px dashed var(--glow);
 
   display: flex;
   flex-direction: column;
@@ -16,9 +16,9 @@
   color: var(--light);
   
   background: var(--dark);
-  border: 1px dashed var(--glow-dark);
+  border: 2px dashed var(--glow-dark);
 }
 .browse-button:hover{
-  border: 1px dashed var(--glow);
+  border: 2px dashed var(--glow);
   color: var(--glow);
 }

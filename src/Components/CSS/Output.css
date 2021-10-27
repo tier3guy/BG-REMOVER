@@ -2,7 +2,7 @@
   width: 50vw;
   height: 450px;
 
-  border: 1px dashed var(--glow);
+  border: 2px dashed var(--glow);
   display: flex;
   justify-content: center;
   align-items: center;
