@@ -1,5 +1,7 @@
 // File Validation
 export const ValidateFile = (image) => {
+  if(image === null) return false;
+  
   const AcceptableFileTypes = ['image/png', 'image/jpeg', 'image/jpg'];
   const AcceptableFileSize = 20e6;
     

@@ -4,8 +4,12 @@ import {BlockDefault} from '../../Functions/BlockDefaults';
 import {ValidateFile} from '../../Functions/Validator';
 import {CollectImage} from '../../Functions/ImageCollector';
 import UploadButton from './UploadButton';
+import { upload } from '../../Functions/Upload';
 
 const DragableContainer = () => {
+
+  // Creating Image state
+  let Image = null;
   
   // Creating a fake input over the 'Browse Files' Button
   const ImageFile = document.createElement('input');
@@ -14,9 +18,10 @@ const DragableContainer = () => {
 
   // Image Uploading Event Listener
   ImageFile.addEventListener('change', () => {
-    const Image = ImageFile.files[0];
+    Image = ImageFile.files[0];
     if(ValidateFile(Image)){
-      console.log(Image, FormData);
+      console.log(Image);
+      upload(Image);
     } 
     else console.log('Invalid Format ...');
   })
@@ -30,7 +35,7 @@ const DragableContainer = () => {
           onDragEnter = {(event) => {BlockDefault(event)}}
           onDrop = {(event) => {
             BlockDefault(event);
-            const Image = CollectImage(event);
+            Image = CollectImage(event);
             if(ValidateFile(Image)){
               console.log(Image);
             } 
@@ -43,7 +48,7 @@ const DragableContainer = () => {
           Browse Files
         </button>
       </div>
-      <UploadButton/>
+      <UploadButton upload = {upload}/>
     </div>
   )
 }
