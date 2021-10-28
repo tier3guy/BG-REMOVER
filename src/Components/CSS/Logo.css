@@ -1,7 +1,7 @@
 .logo-main{
   width: fit-content;
   letter-spacing: 1px;
-  padding: 20px;
-  border: 1px dashed var(--glow);
+  padding: 10px 20px;
+  border: 2px dashed var(--glow);
   display: inline-block;
 }

@@ -1,16 +1,10 @@
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import {storage} from '../Database/Config';
+import {BgRemover} from '../BgRemover/BgRemover';
 
 export const upload = (file) => {
-
-  if(file === null){
-    alert('Insert a file first !');
-    return;
-  }
-
   const storageRef = ref(storage, 'images/' + file.name);
   const uploadTask = uploadBytesResumable(storageRef, file);
-
 
   uploadTask.on('state_changed',
     (snapshot) => {
@@ -31,10 +25,8 @@ export const upload = (file) => {
       switch (error.code) {
         case 'storage/unauthorized':
           break;
-
         case 'storage/canceled':
           break;
-
         case 'storage/unknown':
           break;
       }
@@ -42,7 +34,7 @@ export const upload = (file) => {
     () => {
       // Upload completed successfully, now we can get the download URL
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
-        console.log('File available at', downloadURL);
+        BgRemover(downloadURL);
       });
     }
   );

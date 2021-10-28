@@ -1,0 +1,22 @@
+.bar{
+  width: 100px;
+  height: 20px;
+  border: 2px solid var(--glow-dark);
+  margin-top: 15px;
+
+  display: flex;
+}
+
+.loaded{
+  background: var(--glow-dark);
+  height: inherit;
+  width: 10%;
+}
+
+.unloaded{
+  background: transparent;
+  height: inherit;
+}
+
+
+

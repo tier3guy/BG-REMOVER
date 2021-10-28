@@ -22,3 +22,7 @@
   border: 2px dashed var(--glow);
   color: var(--glow);
 }
+
+.dragable-loader-container{
+  display: flex;
+}

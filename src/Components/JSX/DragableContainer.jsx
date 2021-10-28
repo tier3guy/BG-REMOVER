@@ -1,10 +1,15 @@
 import React from 'react';
 import '../CSS/DragableContainer.css';
+
+// Importing Required Functions
 import {BlockDefault} from '../../Functions/BlockDefaults';
 import {ValidateFile} from '../../Functions/Validator';
 import {CollectImage} from '../../Functions/ImageCollector';
-import UploadButton from './UploadButton';
 import { upload } from '../../Functions/Upload';
+
+// Importing Components
+import UploadButton from './UploadButton';
+import LoadingBar from './LoadingBar';
 
 const DragableContainer = () => {
 
@@ -17,11 +22,11 @@ const DragableContainer = () => {
   ImageFile.accept = 'image/png, image/jpeg, image/jpg';
 
   // Image Uploading Event Listener
-  ImageFile.addEventListener('change', () => {
+  ImageFile.addEventListener('change', async () => {
     Image = ImageFile.files[0];
     if(ValidateFile(Image)){
       console.log(Image);
-      upload(Image);
+      await upload(Image);
     } 
     else console.log('Invalid Format ...');
   })
@@ -48,7 +53,10 @@ const DragableContainer = () => {
           Browse Files
         </button>
       </div>
-      <UploadButton upload = {upload}/>
+      <div className = "dragable-loader-container">
+        <UploadButton upload = {upload}/>
+        <LoadingBar/>
+      </div>
     </div>
   )
 }

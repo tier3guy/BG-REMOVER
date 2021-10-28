@@ -5,6 +5,7 @@ const Output = () => {
   return (
     <aside className = "output-window">
       <p className = "font-light">Output Window</p>
+      <img src = "" id = "output-image"></img>
     </aside>
   )
 }
