@@ -21,6 +21,9 @@ export const upload = (file) => {
         case 'running':
           console.log('Upload is running');
           break;
+        default:
+          console.log('Working on ..');
+          break;
       }
     }, 
     (error) => {
@@ -33,10 +36,13 @@ export const upload = (file) => {
           break;
         case 'storage/unknown':
           break;
+        default:
+          console.log('Working on ..');
+          break;
       }
     }, 
     () => {
-      
+
       // Upload completed successfully, now we can get the download URL
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
         BgRemover(downloadURL);
