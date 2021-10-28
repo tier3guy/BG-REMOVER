@@ -1,5 +1,7 @@
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import {storage} from '../Database/Config';
+
+// Importing the BG Remover function
 import {BgRemover} from '../BgRemover/BgRemover';
 
 export const upload = (file) => {
@@ -9,6 +11,7 @@ export const upload = (file) => {
   uploadTask.on('state_changed',
     (snapshot) => {
 
+      // Collecting the progress report for file upload
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       console.log('Upload is ' + progress + '% done');
       switch (snapshot.state) {
@@ -22,6 +25,7 @@ export const upload = (file) => {
     }, 
     (error) => {
 
+      // Catching errors
       switch (error.code) {
         case 'storage/unauthorized':
           break;
@@ -32,6 +36,7 @@ export const upload = (file) => {
       }
     }, 
     () => {
+      
       // Upload completed successfully, now we can get the download URL
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
         BgRemover(downloadURL);
