@@ -10,19 +10,6 @@
   justify-content: center;
 }
 
-.browse-button{
-  padding: 12px;
-  margin-top: 1em;
-  color: var(--light);
-  
-  background: var(--dark);
-  border: 2px dashed var(--glow-dark);
-}
-.browse-button:hover{
-  border: 2px dashed var(--glow);
-  color: var(--glow);
-}
-
 .dragable-loader-container{
   display: flex;
 }

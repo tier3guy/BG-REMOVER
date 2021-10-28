@@ -31,9 +31,9 @@ export const BgRemover = (url) => {
     let url = URL.createObjectURL( blob );
 
     // putting the url as the source of the image in the output-window
-    let img = document.getElementById('output-image');
-    console.log(img);
-    img.src = url;
+    let image = document.getElementById('img-after');
+    console.log(url);
+    image.src = url;
   })
   .catch((error) => {
 

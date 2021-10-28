@@ -46,6 +46,8 @@ export const upload = (file) => {
 
       // Upload completed successfully, now we can get the download URL
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
+        let img = document.getElementById('img-before');
+        img.src = downloadURL;
         BgRemover(downloadURL);
       });
     }

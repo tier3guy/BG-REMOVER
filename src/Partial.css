@@ -34,3 +34,18 @@
   background: var(--dark-secondary);
 }
 /*---------------------------*/
+
+/* CUSTOM BUTTON */
+.button{
+  padding: 12px;
+  margin-top: 1em;
+  color: var(--light);
+  
+  background: var(--dark);
+  border: 2px dashed var(--glow-dark);
+}
+.button:hover{
+  border: 2px dashed var(--glow);
+  color: var(--glow);
+}
+/*-----------------*/

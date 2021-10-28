@@ -7,8 +7,6 @@ import {ValidateFile} from '../../Functions/Validator';
 import {CollectImage} from '../../Functions/ImageCollector';
 import { upload } from '../../Functions/Upload';
 
-// Importing Components
-import LoadingBar from './LoadingBar';
 
 const DragableContainer = () => {
 
@@ -32,7 +30,6 @@ const DragableContainer = () => {
 
   return (
     <div className = "dragable-main">
-
       <div className = "dragable-container"
           onDragOver = {(event) => {BlockDefault(event)}}
           onDrag = {(event) => {BlockDefault(event)}}
@@ -51,15 +48,12 @@ const DragableContainer = () => {
         <p className = "font-light">Drag and Drop your File Here</p>
         <p className = "font-light">OR</p>
 
-        <button className = "browse-button" 
+        <button className = "button" 
                 id = "browse-btn" 
                 onClick = {() => ImageFile.click()}>
                 Browse Files
         </button>
 
-      </div>
-      <div className = "dragable-loader-container">
-        <LoadingBar/>
       </div>
     </div>
   )
