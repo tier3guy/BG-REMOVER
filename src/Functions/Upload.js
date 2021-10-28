@@ -5,6 +5,7 @@ import {storage} from '../Database/Config';
 import {BgRemover} from '../BgRemover/BgRemover';
 
 export const upload = (file) => {
+
   const storageRef = ref(storage, 'images/' + file.name);
   const uploadTask = uploadBytesResumable(storageRef, file);
 
