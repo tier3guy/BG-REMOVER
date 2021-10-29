@@ -9,6 +9,9 @@ export const BgRemover = (url) => {
   formData.append('size', 'auto');
   formData.append('image_url', url);
 
+  let after_div = document.getElementById('after-div');
+  after_div.innerText = 'Processing ...';
+
   // Calling to 'remove.bg API' 
   axios({
     method: 'post',
@@ -34,6 +37,7 @@ export const BgRemover = (url) => {
     let image = document.getElementById('img-after');
     console.log(url);
     image.src = url;
+    after_div.innerText = 'Processed Image';
   })
   .catch((error) => {
 

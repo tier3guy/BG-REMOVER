@@ -14,7 +14,8 @@ export const upload = (file) => {
 
       // Collecting the progress report for file upload
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-      console.log('Upload is ' + progress + '% done');
+      let before_div = document.getElementById('before-div');
+      before_div.innerText = 'Upload is ' + progress + '% done';
       switch (snapshot.state) {
         case 'paused':
           console.log('Upload is paused');
@@ -47,6 +48,7 @@ export const upload = (file) => {
       // Upload completed successfully, now we can get the download URL
       getDownloadURL(uploadTask.snapshot.ref).then((downloadURL) => {
         let img = document.getElementById('img-before');
+        console.log(img);
         img.src = downloadURL;
         BgRemover(downloadURL);
       });

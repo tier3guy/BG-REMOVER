@@ -7,11 +7,15 @@ const Output = () => {
       <aside className = "output-window">
         <div className = "img-container">
           <div className = "before-div">
-            <img src = "" className = "img" id = "img-before"></img>
+            <img className = "img" id = "img-before"></img>
           </div>
           <div className = "after-div">
-            <img src = "" className = "img" id = "img-after"></img>
+            <img className = "img" id = "img-after"></img>
           </div>
+        </div>
+        <div className="progress-container">
+          <div className = "before"  id = "before-div"></div>
+          <div className = "after"  id = "after-div"></div>
         </div>
       </aside>
       <button className="button" onClick={() => {

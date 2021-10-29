@@ -5,7 +5,7 @@
   border: 4px dashed var(--glow-dark);
   display: flex;
   justify-content: center;
-  align-items: center;
+  flex-direction: column;
 
 }
 
@@ -15,12 +15,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  color: var(--glow-dark);
 }
-
-.before-div{
+#before-div, #after-div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--glow-dark);
+}
+.progress-container{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  border-top: 4px dashed var(--glow-dark);
+}
+.before-div, #before-div{
   border-right: 2px dashed var(--glow-dark);
 }
-.after-div{
+.after-div, #after-div{
   border-left: 2px dashed var(--glow-dark);
 }
 
@@ -36,6 +50,6 @@ img{
   object-fit: contain;
   position: fixed;
   z-index: 999;
-
+  position: fixed;
   border: none;
 }
