@@ -2,7 +2,7 @@
   width: 60vw;
   height: 450px;
 
-  border: 2px dashed var(--glow);
+  border: 4px dashed var(--glow-dark);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,10 +18,10 @@
 }
 
 .before-div{
-  border-right: 1px dashed var(--glow);
+  border-right: 2px dashed var(--glow-dark);
 }
 .after-div{
-  border-left: 1px dashed var(--glow);
+  border-left: 2px dashed var(--glow-dark);
 }
 
 .img-container{

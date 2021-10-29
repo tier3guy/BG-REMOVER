@@ -2,7 +2,7 @@
   width: 450px;
   height:450px;
 
-  border: 2px dashed var(--glow);
+  border: 4px dashed var(--glow-dark);
 
   display: flex;
   flex-direction: column;

@@ -6,11 +6,10 @@
   --font-main : 'Roboto Condensed';
 
   /* COLOR SCHEME */
-  --dark : #0b0c10; 
-  --dark-secondary : #1f2833; 
-  --light : #c5c6c7; 
-  --glow : #66fcf1; 
-  --glow-dark : #45a29e; 
+  --dark : #163172; 
+  --light : #F6F6F6; 
+  --glow : #1E56A0; 
+  --glow-dark : #D6E4F0; 
 }
 
 /* FONT COLOR CLASSES */

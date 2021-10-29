@@ -2,6 +2,6 @@
   width: fit-content;
   letter-spacing: 1px;
   padding: 10px 20px;
-  border: 2px dashed var(--glow);
+  border: 4px dashed var(--glow-dark);
   display: inline-block;
 }
