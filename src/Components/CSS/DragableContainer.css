@@ -1,6 +1,6 @@
 .dragable-container{
   width: 450px;
-  height:450px;
+  height:500px;
 
   border: 4px dashed var(--glow-dark);
 

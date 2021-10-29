@@ -53,3 +53,7 @@ img{
   position: fixed;
   border: none;
 }
+
+#download-button{
+  width: 100%;
+}

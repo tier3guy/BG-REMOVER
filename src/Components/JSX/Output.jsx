@@ -18,7 +18,7 @@ const Output = () => {
           <div className = "after"  id = "after-div"></div>
         </div>
       </aside>
-      <button className="button" onClick={() => {
+      <button className="button" id = "download-button" onClick={() => {
         var link = document.createElement('a');
         link.href = document.getElementById('img-after').src;
         link.download = 'Download.png';

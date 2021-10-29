@@ -15,7 +15,7 @@ export const upload = (file) => {
       // Collecting the progress report for file upload
       const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
       let before_div = document.getElementById('before-div');
-      before_div.innerText = 'Upload is ' + progress + '% done';
+      before_div.innerText = `${progress}% image Uploaded`;
       switch (snapshot.state) {
         case 'paused':
           console.log('Upload is paused');

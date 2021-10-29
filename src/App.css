@@ -1,6 +1,11 @@
 .main-body{
   display: flex;
-  padding: 1em 2em;
+  padding: 2em 2em;
 
   justify-content: space-between;
+  overflow: hidden;
+}
+
+::-webkit-scrollbar{
+  display: none;
 }
