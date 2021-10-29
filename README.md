@@ -13,4 +13,4 @@
 - .env (securing private keys)
 - Creating drag and drop feature 
 
-### The website is live at ![LINK](https://617ba27410a9219c0a221181--bg-remove.netlify.app/)
+### The website is live at [LINK](https://617ba27410a9219c0a221181--bg-remove.netlify.app/)
